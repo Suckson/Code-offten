@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>至上知识点</title>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" href="/favicon.ico">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="http://m.cw2009.com/templates/dist/font-css/iconfont.css"/>
+    <script id="-mob-share" src="http://f1.webshare.mob.com/code/mob-share.js?appkey=24cc75ad1129c"></script>
+    <link href="https://cdn.bootcss.com/animate.css/3.7.0/animate.css" rel="stylesheet">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="white">
+	<link rel="stylesheet" href="http://m.cw2009.com/templates/dist/css/menudown.css" />
+<link rel="stylesheet" href="http://m.cw2009.com/templates/dist/css/sm.min.css" />
+<link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css" />
+<link rel="stylesheet" href="//at.alicdn.com/t/font_412959_apwdzda439sve7b9.css" />
+<!-- <link rel="stylesheet" href="http://m.cw2009.com/templates/dist/font/iconfont.css" /> -->
+<link rel="stylesheet" href="http://m.cw2009.com/templates/dist/css/app.css?v=1542556534" />
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?fdb6d690c7cf25ae3d0c7680c96139db";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+	<style type="text/css">
+		.footerdiscus{
+			height: 2.5rem;
+			background: #fff;
+		}
+		.box img{
+			max-width: 96%;
+			height: auto;
+		}
+		.comment-form,
+		.comment-list{
+			padding:.5rem;
+		}
+		.comment-box{
+            border:1px solid #fff;
+            margin:5px 0;
+            border-radius: 4px;
+        }
+        .comment-head{
+            font-size: 12px;
+            border-bottom: 1px solid #fff;
+            padding:10px;
+            background: #fff;
+            border-radius: 4px 4px 0 0;
+        }
+        .comment-body{
+            padding: 10px;
+            font-size: 12px;
+        }
+        .comment-form-body{
+            padding: 10px 0;
+        }
+        footer{
+            position: fixed;
+            bottom: 0px;
+            padding: 4px 0;
+            width: 100%;
+            background: #fff;
+            border-top:1px solid #e4d7d7;
+            height: 2.5rem;
+        }
+        .footer-left{
+            width: 45%;
+            padding-top: 0.15rem;
+            padding-right: 0.3rem;
+            padding-left: 0.6rem;
+            position: relative;
+        }
+        .footer-left-absu{
+        	position: absolute;
+        	left: 1rem;
+        	top: 0.5rem;
+        	font-size: 0.6rem;
+        	color: #262727;
+        	height: 1.1rem;
+        }
+        .footer-left-absu i,.footer-left-absu span{
+        	line-height: 1.1rem;
+        }
+        .footer-left-absu i{
+        	margin-right: 0.1rem;
+        }
+        .footer-left-absu span{
+        	display: block;
+        	margin:  -22px 0 0 24px;
+        }
+        #input1{
+        	padding-left: 0.5rem;
+        	vertical-align: middle;
+            font-size: 0.8rem;
+            background: #F4F5F7;
+            width:124% ;
+            height: 1.8rem;
+            border-radius: 10px;
+            font-size: 0.8rem;
+            border: none;
+        }
+        .footer-right{
+            position: absolute;
+            right: 1px;
+            top: 0;
+            height: 2.5rem;
+            width: 45%;
+        }
+        .footer-right button{
+            display: block;
+            width: 32%;
+            color: white;
+            border: none;
+            position: absolute;
+            right: 0.5rem;
+            top: 0.3rem;
+            height: 1.7rem;
+            border-radius: 15px;
+            background:linear-gradient(to right,orangered,#e43c3c);
+        }
+        .right-sapn{
+        	width: 100%;
+        }
+        .right-sapn i{
+        	float: left;
+        	line-height: 2.5rem;
+        	margin: 0 0.05rem;
+        	font-size: 1rem;
+        	color:#676363;
+        }
+        .right-sapn i:nth-child(2){
+        	font-size: 1.5rem;
+        }
+        .model{
+           width: 100%;
+           position: fixed;
+           top:2rem;
+           background: #F4F4F4;
+           animation-duration:0.5s;
+           overflow-y: auto;
+        }
+        .model-2{
+           width: 100%;
+           height: 70%;
+           padding: 0.2rem 0.2rem 0 0.2rem;
+           position: fixed;
+           animation-duration:0.5s;
+           overflow-y: auto;
+           bottom: 2rem;
+           background:#F4F4F4;
+           border-radius: 15px;
+        }
+        
+       .list-content-li{
+      	width: 100%;
+      	height: 4rem;
+      	background: #fff;
+      	border-bottom: dashed 1px #d8d8d8;
+      }
+      .list-content-li:hover{
+      	background:#fff;
+      }
+      .list-content-li div{
+       	float: left;
+       	height: 4rem;
+       }
+      .li-img{
+      	width: 12%;
+      	padding: 0.7rem 0 0 0.3rem;
+      }
+      .li-img img{
+      	width: 37px;
+      	height: 37px;
+      	border-radius:50%;
+      }
+      .li-p{
+      	width: 85%;
+      	padding-top: 0.3rem;
+      }
+      .li-p p{
+      	margin: 1px 0 0 20px;
+      	color: #403c3c;
+      	font-size: 0.7rem;
+      }
+      .li-p p:nth-child(1){
+      	font-size: 0.8rem;
+      	color:#e82727;
+      	font-weight: 300;
+      }
+       .li-p p:nth-child(3){
+      	font-size: 0.5rem;
+      	color:#928c8c;
+      	font-weight: 200;
+      }
+      .li-p p:nth-child(1) span{
+      	color: red;
+      	margin-left: 0.3rem;
+      }
+      .li-btn{
+      	width: 0%;
+      	padding-top: 0.8rem;
+      }
+      .li-btn a{
+      	border: 1px solid #ea6e6e;
+      	border-radius: 8px;
+      	width: 95%;
+      	height:1.5rem;
+      	padding-top: 0.1rem;
+      	background: none;
+      	color:#ea6e6e;
+      	text-align: center;
+      	display: inline-block;
+      }
+      .li-btn a:hover{
+      	color: white;
+      	background: red;
+      }
+     #model3{
+        width: 100%;
+     	height: 5rem !important;
+        background:#ffffff;
+        border-radius:3px;
+        padding-top: 0.7rem;
+        overflow: hidden;
+     }
+     .p-artic-parent{
+       background: #fff;
+       width: 100%;
+       border-bottom: 1px #e2e2e2 solid;
+     }
+     .p-artic-parent-p{
+     	font-size: 0.8rem !important;
+     }
+     .p-artic-parent p{
+        line-height: 0.5rem;
+        font-size: 0.7rem;
+     }
+     .p-artic p{
+        line-height: 0.7rem;
+     }
+     .p-artic p a{
+        color:#0894ec;
+     }
+     .p-artic p a:nth-child(1){
+        margin-left: 2%;
+     }
+     .p-artic p a:nth-child(2){
+        margin-left: 0%;
+     }
+	</style>
+</head>
+<body>
+	<div class="page-group">
+		<div class="page">
+			<nav class="bar bar-tab global-bar footerdiscus">
+    <footer>
+        <div class="footer-left">
+            <div class="footer-left-absu">
+            <i class="iconfont icon-hangmo_jianliguanlian_xieqihangx"></i>
+            <span style="margin-right:3px">写评论<i>...</i></span>
+            </div>
+            <input type="text"  placeholder="" id="input1" />
+        </div>
+        <div class="footer-right">
+            <button id="btn1" style="display: none;">发表</button>
+            <div class="right-sapn"style="padding-left: 0.5rem;">
+            	<i class="iconfont icon-pinglun" id="mesalert" style="margin-left: 0.5rem;margin-right: 1rem;"></i>
+            	<i class="iconfont icon-shangpin1" id="goodalert"></i>
+                <i class="fa fa-share" aria-hidden="true" id="share" style="margin-left: 0.9rem;"></i>
+        </div>
+    </footer>
+</nav>			<header class="bar bar-nav" style="background: #fff;">
+				<a href="/toutiao.html" class="button button-link button-nav pull-left back">
+					<span class="icon icon-left"></span>
+				</a>
+                 <div class="font-size-7 text-center" style="padding:.7rem .75rem;" id="title">
+                        服务者入驻至上APP的优势                 </div>
+			</header>
+			<div class="content">
+		
+				<div style="background: #fff8f1;padding: 15px;font-size:.6rem;line-height: 120%;border:1px solid #fb0;">
+					版权声明<br />
+					本文仅代表作者观点，不代表至上立场。<br />
+					本文系作者授权至上会计发表，未经许可，不得转载。
+				</div>
+				<div class="font-size-6 p-artic-parent" style="width: 100%;padding: 0.2rem 0.5rem 0 0.5rem">
+                    <!--<div>
+                        上一篇：<a class="text-color-red" href="/toutiao/1687.html">注册公司，创业者首选至上app</a>                    </div>
+                    <div>
+                        下一篇：<a class="text-color-red" href="/toutiao/1689.html">有梦最美</a>                    </div>-->
+                    <p class="p-artic-parent-p">其他知识推荐</p>
+                    <div class="p-artic">
+                                          	<div style="position: relative;padding-left: 0.1rem;height:1.5rem;display: block;width: 100%;">
+                        <div style="float: left;width: 5%">
+                          <img src="http://m.cw2009.com/templates/dist/img/qq1.png" alt=""style="width: 15px;height: 15px;line-height: 1rem;float: left;">
+                        </div>
+                        <a class="col-33 goods-item external" style="display:block;width:95%;float: left;color:#0b8dde;"href="/toutiao/120.html">  现金流量表能分析出企业的5大财务状况</a>
+                      </div>
+                                          	<div style="position: relative;padding-left: 0.1rem;height:1.5rem;display: block;width: 100%;">
+                        <div style="float: left;width: 5%">
+                          <img src="http://m.cw2009.com/templates/dist/img/qq1.png" alt=""style="width: 15px;height: 15px;line-height: 1rem;float: left;">
+                        </div>
+                        <a class="col-33 goods-item external" style="display:block;width:95%;float: left;color:#0b8dde;"href="/toutiao/974.html">  公司注册资金太高容易引发哪些危害？</a>
+                      </div>
+                                          	<div style="position: relative;padding-left: 0.1rem;height:1.5rem;display: block;width: 100%;">
+                        <div style="float: left;width: 5%">
+                          <img src="http://m.cw2009.com/templates/dist/img/qq1.png" alt=""style="width: 15px;height: 15px;line-height: 1rem;float: left;">
+                        </div>
+                        <a class="col-33 goods-item external" style="display:block;width:95%;float: left;color:#0b8dde;"href="/toutiao/1001.html">  企业增资怎么办理,公司增资怎么办理</a>
+                      </div>
+                                          	<div style="position: relative;padding-left: 0.1rem;height:1.5rem;display: block;width: 100%;">
+                        <div style="float: left;width: 5%">
+                          <img src="http://m.cw2009.com/templates/dist/img/qq1.png" alt=""style="width: 15px;height: 15px;line-height: 1rem;float: left;">
+                        </div>
+                        <a class="col-33 goods-item external" style="display:block;width:95%;float: left;color:#0b8dde;"href="/toutiao/1178.html">  工商注册信息</a>
+                      </div>
+                                          	<div style="position: relative;padding-left: 0.1rem;height:1.5rem;display: block;width: 100%;">
+                        <div style="float: left;width: 5%">
+                          <img src="http://m.cw2009.com/templates/dist/img/qq1.png" alt=""style="width: 15px;height: 15px;line-height: 1rem;float: left;">
+                        </div>
+                        <a class="col-33 goods-item external" style="display:block;width:95%;float: left;color:#0b8dde;"href="/toutiao/1225.html">  上海市办理工商变更登记的程序</a>
+                      </div>
+                                          </div>
+                    <div class="clearfix"></div>
+                  </div>
+				<div style="position: relative;" id="discuss">
+					<ul id="list-content" style="padding: 0 0px; background: #fff" id="model1-1">
+                                                						     			<li class="list-content-li">
+					      			<div class="li-img">
+					      				<img src="http://assets.cw2009.com/u/20181108/thumb_1541706604.jpg" />
+					      			</div>
+					      			<div class="li-p">
+					      				<p></p>
+					      				<p>柴</p>
+					      				<p>2018-11-18 00:29:04</p>
+					      			</div>
+					      			<div class="li-btn">
+					      				<!--<a href="'tel:'+item.mobile" class="">咨询Ta</a>-->
+					      			</div>
+					      		    </li>
+					 	     		    
+                                             						     			<li class="list-content-li">
+					      			<div class="li-img">
+					      				<img src="http://assets.cw2009.com/u/20171123/thumb_1511488759.png" />
+					      			</div>
+					      			<div class="li-p">
+					      				<p>周敏</p>
+					      				<p>你不需要证明，只需要时间</p>
+					      				<p>2018-11-17 00:13:53</p>
+					      			</div>
+					      			<div class="li-btn">
+					      				<!--<a href="'tel:'+item.mobile" class="">咨询Ta</a>-->
+					      			</div>
+					      		    </li>
+					 	     		    
+                                             						     			<li class="list-content-li">
+					      			<div class="li-img">
+					      				<img src="http://assets.cw2009.com/u/20171123/thumb_1511488759.png" />
+					      			</div>
+					      			<div class="li-p">
+					      				<p>周敏</p>
+					      				<p>有道理</p>
+					      				<p>2018-11-17 00:10:53</p>
+					      			</div>
+					      			<div class="li-btn">
+					      			</div>
+					      		    </li>
+					 	     		    
+                                             	     		    
+                     					</ul>
+				</div>
+				<div class="animated fadeInUp model-2" style="display: none;" id="model2" style="background:#F4F4F4;border-radius: 15px;height: 70%;bottom: 1.5rem;">
+					<ul id="list-content" style="padding: 0 0px;" class="" id="model2">
+                        					      		    <li class="list-content-li"style="border-bottom:solid 1px #e6e4e4;margin: 0.2rem 0.2rem;border-radius: 15px;">
+					      			<div class="li-img"style="padding-top: 0.5rem; width: 20%;">
+                                        <a class="col-33 goods-item external" style="display: block;" href="http://m.cw2009.com/good/3.html?backuri=/toutiao/1688.html"><img src="http://assets.cw2009.com/u/20180926/thumb_1538014261.jpeg"style="width: 58px;height: 58px;border-radius:5px;"/></a>
+					      			</div>
+                                    <a class="col-33 goods-item external" style="display: block;" href="http://m.cw2009.com/good/3.html?backuri=/toutiao/1688.html">
+					      			<div class="li-p" style="width: 80%;">
+                                        <p style="margin:10px 0 0 10px;font-size: 0.8rem; color:#696060;font-weight: 0;">商标续展</p>
+					      				<p style="margin:2px 0 0 10px;font-size: 0.7rem;"><span style="color:#E17C43;">1800元起 </span></p>
+					      			</div>
+                                    </a>
+					      		    </li>
+                    					      		    <li class="list-content-li"style="border-bottom:solid 1px #e6e4e4;margin: 0.2rem 0.2rem;border-radius: 15px;">
+					      			<div class="li-img"style="padding-top: 0.5rem; width: 20%;">
+                                        <a class="col-33 goods-item external" style="display: block;" href="http://m.cw2009.com/good/20.html?backuri=/toutiao/1688.html"><img src="http://assets.cw2009.com/u/20170712/thumb_1499900033.jpg"style="width: 58px;height: 58px;border-radius:5px;"/></a>
+					      			</div>
+                                    <a class="col-33 goods-item external" style="display: block;" href="http://m.cw2009.com/good/20.html?backuri=/toutiao/1688.html">
+					      			<div class="li-p" style="width: 80%;">
+                                        <p style="margin:10px 0 0 10px;font-size: 0.8rem; color:#696060;font-weight: 0;">税务局代开发票</p>
+					      				<p style="margin:2px 0 0 10px;font-size: 0.7rem;"><span style="color:#E17C43;">500元起 </span></p>
+					      			</div>
+                                    </a>
+					      		    </li>
+                    					      		    <li class="list-content-li"style="border-bottom:solid 1px #e6e4e4;margin: 0.2rem 0.2rem;border-radius: 15px;">
+					      			<div class="li-img"style="padding-top: 0.5rem; width: 20%;">
+                                        <a class="col-33 goods-item external" style="display: block;" href="http://m.cw2009.com/good/44.html?backuri=/toutiao/1688.html"><img src="http://assets.cw2009.com/u/20170630/thumb_1498862438.jpg"style="width: 58px;height: 58px;border-radius:5px;"/></a>
+					      			</div>
+                                    <a class="col-33 goods-item external" style="display: block;" href="http://m.cw2009.com/good/44.html?backuri=/toutiao/1688.html">
+					      			<div class="li-p" style="width: 80%;">
+                                        <p style="margin:10px 0 0 10px;font-size: 0.8rem; color:#696060;font-weight: 0;">独立会计班</p>
+					      				<p style="margin:2px 0 0 10px;font-size: 0.7rem;"><span style="color:#E17C43;">5280元起 </span></p>
+					      			</div>
+                                    </a>
+					      		    </li>
+                    					      		    <li class="list-content-li"style="border-bottom:solid 1px #e6e4e4;margin: 0.2rem 0.2rem;border-radius: 15px;">
+					      			<div class="li-img"style="padding-top: 0.5rem; width: 20%;">
+                                        <a class="col-33 goods-item external" style="display: block;" href="http://m.cw2009.com/good/96.html?backuri=/toutiao/1688.html"><img src="http://assets.cw2009.com/u/20181015/thumb_1539639121.jpg"style="width: 58px;height: 58px;border-radius:5px;"/></a>
+					      			</div>
+                                    <a class="col-33 goods-item external" style="display: block;" href="http://m.cw2009.com/good/96.html?backuri=/toutiao/1688.html">
+					      			<div class="li-p" style="width: 80%;">
+                                        <p style="margin:10px 0 0 10px;font-size: 0.8rem; color:#696060;font-weight: 0;">二级医疗器械备案证</p>
+					      				<p style="margin:2px 0 0 10px;font-size: 0.7rem;"><span style="color:#E17C43;">3500元起 </span></p>
+					      			</div>
+                                    </a>
+					      		    </li>
+                    					      		    <li class="list-content-li"style="border-bottom:solid 1px #e6e4e4;margin: 0.2rem 0.2rem;border-radius: 15px;">
+					      			<div class="li-img"style="padding-top: 0.5rem; width: 20%;">
+                                        <a class="col-33 goods-item external" style="display: block;" href="http://m.cw2009.com/good/124.html?backuri=/toutiao/1688.html"><img src="http://assets.cw2009.com/u/20180921/thumb_1537562229.jpeg"style="width: 58px;height: 58px;border-radius:5px;"/></a>
+					      			</div>
+                                    <a class="col-33 goods-item external" style="display: block;" href="http://m.cw2009.com/good/124.html?backuri=/toutiao/1688.html">
+					      			<div class="li-p" style="width: 80%;">
+                                        <p style="margin:10px 0 0 10px;font-size: 0.8rem; color:#696060;font-weight: 0;">无地址小规模公司注册</p>
+					      				<p style="margin:2px 0 0 10px;font-size: 0.7rem;"><span style="color:#E17C43;">3600元起 </span></p>
+					      			</div>
+                                    </a>
+					      		    </li>
+                    					      		    <li class="list-content-li"style="border-bottom:solid 1px #e6e4e4;margin: 0.2rem 0.2rem;border-radius: 15px;">
+					      			<div class="li-img"style="padding-top: 0.5rem; width: 20%;">
+                                        <a class="col-33 goods-item external" style="display: block;" href="http://m.cw2009.com/good/152.html?backuri=/toutiao/1688.html"><img src="http://assets.cw2009.com/u/20181113/thumb_1542184068.jpg"style="width: 58px;height: 58px;border-radius:5px;"/></a>
+					      			</div>
+                                    <a class="col-33 goods-item external" style="display: block;" href="http://m.cw2009.com/good/152.html?backuri=/toutiao/1688.html">
+					      			<div class="li-p" style="width: 80%;">
+                                        <p style="margin:10px 0 0 10px;font-size: 0.8rem; color:#696060;font-weight: 0;">加入至上APP</p>
+					      				<p style="margin:2px 0 0 10px;font-size: 0.7rem;"><span style="color:#E17C43;">1000元起 </span></p>
+					      			</div>
+                                    </a>
+					      		    </li>
+                    					</ul>
+				</div>
+				<div class="model animated fadeInUp" style="display: none;top: 78%;" id="model3">
+							<ul id="list-content" style="padding: 0px;" class="" id="goods">
+					      	  <li style="width: 33.3%;float: left;" id="share1">
+					      	  	<img src="http://m.cw2009.com/templates/dist/img/qq5.png"style="width: 34px;height: 34px;display: block;margin: 0 auto;"/>
+					      	  	<p style="text-align: center; margin-top: 0.5rem; font-size: 0.6rem;color:#888484;">分享到新浪微博</p>
+					      	  </li>
+					      	   <!--<li style="width: 25%;float: left;" id="share2">
+					      	  	<img src="http://m.cw2009.com/templates/dist/img/qq2.png"style="width: 37px;height: 37px;display: block;margin: 0 auto;"/>
+					      	  	<p style="text-align: center; margin-top: 0.5rem; font-size: 0.8rem;">朋友圈</p>
+					      	  </li>-->
+					      	   <li style="width: 33.3%;float: left;" id="share3">
+					      	  	<img src="http://m.cw2009.com/templates/dist/img/qq4.png"style="width: 34px;height: 34px;display: block;margin: 0 auto;"/>
+					      	  	<p style="text-align: center; margin-top: 0.5rem; font-size: 0.6rem; color: #888484;">分享到QQ好友</p>
+					      	  </li>
+					      	   <li style="width: 33.3%;float: left;" id="share4">
+					      	  	<img src="http://m.cw2009.com/templates/dist/img/qq1.png"style="width: 34px;height: 34px;display: block;margin: 0 auto;"/>
+					      	  	<p style="text-align: center; margin-top: 0.5rem; font-size: 0.6rem;color: #888484;">分享到QQ空间</p>
+					      	  </li>
+					</ul>
+				</div>
+				
+				<div class="height20" style="height:1rem;"></div>
+				<div class="height20"></div>
+                <div class="height20"></div>
+                </div>
+			</div>
+		</div>
+	</div>
+
+
+	<script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+
+<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+
+	<script type="text/javascript">
+		$(function(){
+			  $("#input1").focus(function(){
+           $(".footer-left-absu").hide()
+           $(this).css("width","190%");
+           $("#btn1").show();
+           $(".right-sapn").hide();
+        });
+        $("#input1").on({
+        	blur:function(){
+				setTimeout(function()
+				{
+				if($("#input1").val() ==""){
+	           	  $(".footer-left-absu").show();
+	             }else{
+	              $(".footer-left-absu").hide()
+	             }
+	            $("#btn1").hide();
+	            $(".right-sapn").show();
+	            $("#input1").css("width","124%");
+		},100)
+				}
+		})
+        $(".footer-left-absu").click(function(){
+        	 $("#input1").focus();
+        });
+        $("#mesalert").on("click",function(){
+        	showModelMes();
+        })
+        $("#goodalert").on("click",function(){
+        	showModelGoods();
+        })
+        $("#share").on("click",function(){
+        	showModelShare();
+        })
+        var turn = true;
+        var turn2 = true;
+        var turn3 = true;
+        var turn4 = true;
+        var bb = $("#discuss").offset().top;
+        var hdiv1 = $("#discuss").height();
+        var hdiv2 = $(".box").height();
+        var hdiv3 = 74;
+        var hdiv4 = 197;
+        var com = hdiv1+hdiv2+hdiv3+hdiv4 -hdiv1;
+        function showModelMes(){
+        var hdiv1 = $("#discuss").height();
+        var hdiv2 = $(".box").height();
+        var hdiv3 = 74;
+        var hdiv4 = 197;
+        var com = hdiv1+hdiv2+hdiv3+hdiv4 -hdiv1;
+//      	 console.log($("#discuss").position().top)
+//      	 $("#discuss","body","html").scrollTop($("#discuss").position().top);
+//           console.log($(window).height());
+//           console.log($(document).height())
+//           $("#discuss").scrollTop
+//           document.getElementById("#discuss").scrollTop
+//           console.log( document.getElementById("discuss").scrollHeight)
+//           console.log($("#discuss").scrollTop);
+//       console.log(bb)
+//       $(document.body).outerWidth(true);//文档总高度
+//       console.log($().height());
+//       console.log($("#discuss").scrollTop());
+//       console.log($("#discuss").height())
+//       console.log($("#discuss").position().top)
+//       var com = $(document.body).outerHeight(true) - $("#discuss").height();
+//		  $(".content").animate({"scrollTop":com+"px"})
+		  var aa = 0;
+          if(turn){
+          $("#model2").hide()
+          $("#model3").hide()
+          $("#mesalert").css("color","#f36666");
+          $("#share").css("color","#585858")
+          $("#goodalert").css("color","#585858")
+          var time = setInterval(function(){
+          		$(".content").scrollTop(aa)
+          		if(aa>com){
+          			clearInterval(time)
+          		 }
+          		aa += 50;
+          	},2)
+          	turn = !turn;
+            }else{
+          	$(".content").scrollTop(0)
+          	$("#goodalert").css("color","#585858")
+            $("#mesalert").css("color","#585858");
+            $("#share").css("color","#585858")
+          	turn = !turn;
+          }
+         }
+        function showModelGoods(){
+        	if(turn2){
+        		$(".model").show()
+        		$("#model1").hide()
+        		$("#model3").hide()
+        		$("#model2").show(100)
+                $("#goodalert").css("color","#f36666")
+                $("#mesalert").css("color","#585858");
+                $("#share").css("color","#585858")
+        		turn2 = !turn2
+        	}else{
+        		$("#model1").hide()
+        		$("#model2").hide()
+        		$("#model3").hide()
+        		$("#goodalert").css("color","#585858")
+                $("#mesalert").css("color","585858");
+                $("#share").css("color","#585858")
+        		$(".model").hide(100)
+        		turn2 = !turn2
+        	}
+        	console.log(turn)
+        }
+        function showModelShare(){
+        	if(turn3){
+        		$(".model").show()
+        		$("#model1").hide()
+        		$("#model2").hide()
+        		$("#model3").show(100)
+                $("#goodalert").css("color","#585858")
+                $("#mesalert").css("color","#585858");
+                $("#share").css("color","#f36666")
+        		turn3 = !turn3
+        	}else{
+        		$("#mode1").hide()
+        		$("#mode2").hide()
+        		$("#mode3").hide()
+        		$("#goodalert").css("color","#585858")
+                $("#mesalert").css("color","#585858");
+                $("#share").css("color","#585858")
+        		$(".model").hide(100)
+        		turn3 = !turn3
+        	}
+        }
+        var ftit = $("#title").text();//分享的标题
+		var flink = "http://m.cw2009.com//static/logo_rudis.png";
+		var lk = "http://m.cw2009.com//static/logo_rudis.png";
+        $("#share1").on("click",function(){//新浪
+			 window.open('http://service.weibo.com/share/share.php?url='+document.location.href+'?sharesource=weibo&title='+ftit+'&pic='+lk+'&appkey=2706825840');
+		})
+		$("#share2").on("click",function(){//腾讯微博
+		})
+		$("#share3").on("click",function(){//haoyou
+			window.open('http://connect.qq.com/widget/shareqq/index.html?url='+document.location.href+'?sharesource=qzone&title='+ftit+'&pics='+lk+'&summary='+'&desc=至上服务平台');
+		})
+		$("#share4").on("click",function(){//kongjian
+			window.open('https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url='+document.location.href+'?sharesource=qzone&title='+ftit+'&pics='+lk+'&summary=');
+		})
+			    	
+        //发布评论的方法
+        function setMessage(){
+            if($("#input1").val() != ""){
+                                //alert(3981);return;
+                var uid = 3981;
+                var time = new Date();
+                var comment = $('textarea[name="comment"]').val();
+                if(uid==0){
+                    $.alert('您还未登录');
+                    window.location.href="/loginassms.html?backuri=/toutiao/1688.html";
+                }
+                $.ajax({
+                    type: 'POST',
+                    url: '/save_toutiao_comment.html',
+                    data: {
+                        postid:1688,
+                        comment:$("#input1").val()
+                    },
+                    dataType: 'json',
+                    timeout: 5000,
+                    success: function(e){
+                        $.alert("保存成功",'',function(){
+                            location.href=location.href;
+                        });
+                        $('textarea[name="comment"]').val('');
+                        $('.comment-list').append('<div class="comment-box">\
+                        <div class="comment-head">\
+                            <i class="iconfont icon-yonghuzhongxin"></i>'+name+'\
+                            <span class="text-color-gray">发表于</span>'+time+'\
+                        </div>\
+                        <div class="comment-body">\
+                            <span class="text-color-red">'+comment+'</span>\
+                        </div>\
+                    </div>');
+                        $("#input1").val('');
+                    },
+                    error: function(){
+                        $.alert('接口错误');
+                    },
+                    timeout:function(){
+                        $.alert('已超时，请检查网络。');
+                    }
+                });
+           }
+        }
+        $("#btn1").click(function(e){
+            console.log($("#input1").val())
+            if($("#input1").val()==''){
+                 $.alert('请您先填写评论，再发布');
+                 return false;
+            }
+            $.confirm('您确定要发布该评论么？','',function(){
+                  setMessage();
+            })
+        });
+		})
+      
+    </script>
+	<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+	<script type="text/javascript">
+				
+		wx.config({
+		    debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+		    appId: 'wx9f2d1785175d240a', // 必填，公众号的唯一标识
+		    timestamp: 1542556534, // 必填，生成签名的时间戳
+		    nonceStr: 'ZSKJ', // 必填，生成签名的随机串
+		    signature: '08032e0e7c918a94a5d06a48b030908c881b006a',// 必填，签名，见附录1
+		    jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareQZone'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+		});
+		wx.ready(function(){
+		    wx_share('服务者入驻至上APP的优势','http://m.cw2009.com/toutiao/1688.html','http://assets.cw2009.com/u/20181116/thumb_1542369699.png','10年前，中国每年新注册企业的数量是');
+		});
+
+
+		function wx_share(title, link, imgurl, desc) {
+		  //朋友圈
+		  wx.onMenuShareTimeline({
+		    title: title, // 分享标题
+		    link: link, // 分享链接
+		    imgUrl: imgurl, // 分享图标
+		    success: function() {
+		      // 用户确认分享后执行的回调函数
+		    },
+		    cancel: function() {
+		      // 用户取消分享后执行的回调函数
+		    }
+		  });
+		  //微信好友
+		  wx.onMenuShareAppMessage({
+		    title: title, // 分享标题
+		    desc: desc, // 分享描述
+		    link: link, // 分享链接
+		    imgUrl: imgurl, // 分享图标
+		    type: 'link', // 分享类型,music、video或link，不填默认为link
+		    dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+		    success: function() {
+		      // 用户确认分享后执行的回调函数
+		    },
+		    cancel: function() {
+		      // 用户取消分享后执行的回调函数
+		    }
+		  });
+
+		  //qq
+		  wx.onMenuShareQQ({
+		    title: title, // 分享标题
+		    desc: desc, // 分享描述
+		    link: link, // 分享链接
+		    imgUrl: imgurl, // 分享图标
+		    success: function() {
+		      // 用户确认分享后执行的回调函数
+		    },
+		    cancel: function() {
+		      // 用户取消分享后执行的回调函数
+		    }
+		  });
+		  // qq空间
+		  wx.onMenuShareQZone({
+		    title: title, // 分享标题
+		    desc: desc, // 分享描述
+		    link: link, // 分享链接
+		    imgUrl: imgurl, // 分享图标
+		    success: function() {
+		      // 用户确认分享后执行的回调函数
+		    },
+		    cancel: function() {
+		      // 用户取消分享后执行的回调函数
+		    }
+		  });
+		}
+	</script>
+</body>
+</html>
