@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>我的生活</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+   <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+   <link href="https://cdn.bootcss.com/animate.css/3.7.0/animate.css" rel="stylesheet">
+   <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+   <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+  </head>
+  <style>
+  	header{
+  	}
+  	.main{
+  		margin: 2.2rem 0 0 0;
+  		height: calc(100% - 2.2rem);
+  		width: 100%;
+  		overflow: auto;
+  	}
+  	 .gouwucheCart{
+  	 	background: #fff;
+  	 	padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+  	 	border-bottom: 1px solid #ebe5e5;
+  	 }
+  	 
+  	 .top p{
+  	 	font-size: 0.7rem;
+  	 	margin: 0;
+  	 	height: 1rem;
+  	 	font-weight:bolder;
+  	 	line-height: 1rem;
+  	 }
+  	 .fahuo{
+  	 	color:#f6383a;
+  	 }
+  	 .i1{
+  	 	margin: 0 0.25rem 0 0;
+  	 	color: orangered;
+  	 	font-size: 0.85rem;
+  	 }
+  	 .i2{
+  	 	margin: 0 0rem 0 0.25rem;
+  	 	color: #ada6a6;
+  	 	font-size: 1rem;
+  	 }
+  	 .center-img img{
+  	 	width: 100%;
+  	 	height: 4.5rem;
+  	 	margin: 5% 0 0 0;
+  	 }
+  	 .center{
+  	 	padding-top: 0.2rem;
+  	 }
+  	 .center-right p{
+  	 	margin: 0;
+  	 }
+  	 .center-right p:nth-child(1){
+  	 	font-size: 0.65rem;
+  	 	color: #23262E;
+  	 }
+  	 .center-right p:nth-child(2){
+  	 	font-size: 0.65rem;
+  	 	color: #999090;
+  	 }
+  	 .center-right p:nth-child(3) span{
+  	 	font-size: 0.4rem;
+  	 	color:#D55782;
+  	 	background:#FBF2F6;
+  	 	width: 23%;
+  	 	border-radius: 4%;
+  	 	display: block;
+  	 	padding: 1px 0;
+  	 }
+  	 .center-fright{
+  	 	margin-left: 0 !important;
+  	 }
+  	 .center-fright p{
+  	 	width: 131%;
+  	 	text-align: right;
+  	 	margin: 0;
+  	 }
+  	 .center-fright p:nth-child(1){
+  	 		font-size: 0.8rem;
+  	 }
+  	 .center-fright p:nth-child(2){
+  	 	 font-size: 0.7rem;
+  	 	 color: #999090;
+  	 }
+  	 .bottom1 p{
+  	 	  margin: 0.1rem 0;
+  	 	 	font-size: 0.7rem;
+  	 }
+  	 .money{
+  	 	font-size: 0.9rem;
+  	 	color: #EA5C5C;
+  	 }
+  	 .bottom2{
+  	 	/*margin-top:-3rem;*/
+  	 }
+  	 .bottom2-left p{
+  	 	text-align: left;
+  	 	margin: 0;
+  	 	font-size: 0.75rem;
+  	 	color: #c2c3c4;
+  	 }
+  	 .bottom2-right{
+  	 	text-align: right;
+  	 }
+  	 .bottom2-right button{
+  	 	 background: none;
+  	 	 border: 1px solid #595757;
+  	 	 font-size: 0.75rem;
+  	 	 padding: 3px 5px;
+  	 	 border-radius: 4px;
+  	 	 margin: 0 0.3rem;
+  	 }
+  	 .bottom2-right button:nth-child(3){
+  	 	 margin: 0;
+  	 	 border: 1px solid #EA5C5C;
+  	 	 color:#EA5C5C;
+  	 }
+  	 .lishi{
+  	 	color: #f64446;
+  	 	font-size: 0.75rem !important;
+  	 	font-weight: border !important;
+  	 }
+  </style>
+  <body>
+    <div class="page-group">
+        <div class="page page-current">
+        	<header class="bar bar-nav">
+                <a class="icon  pull-right open-panel lishi">确认历史</a>
+                <h1 class="title"></h1>
+          </header>
+      <div class="main">
+      	
+			<div class="gouwucheCart">
+				<div class="top">
+					<p>
+						<span><i class="fa i1">订单号：</i>7976</span>
+						<span class="pull-right fahuo">2018-05-16 18:48:12</span>
+					</p>
+				</div>
+				<div class="center">
+					<div class="row">
+						<div class="col-25 center-img">
+							<img src="http://assets.cw2009.com/u/20180911/thumb_1536707227.jpg"/>
+						</div>
+						<div class="col-60 center-right">
+							<p> 一般纳税人代理进账（财务）</p>
+							<p> 订单待确认</p>
+							<p><span>七天退换</span> <span>七天退换</span></p>
+						</div>
+						<div class="col-15 center-fright">
+							<p></p>
+							<p>x1</p>
+						</div>
+					</div> 
+					<!--<div class="row bottom1">
+						  <p class="pull-right">共一件商品  <span>合计</span><span class="money">￥40.90</span></p>
+					</div>-->
+				</div>
+				<div>
+					<div class="row bottom2">
+						<div class="col-20 bottom2-left">
+						   <p>&nbsp;&nbsp;&nbsp;</p>
+						</div>
+						<div class="col-80 bottom2-right">
+						   <button>不同意</button>
+						   <button>我同意</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+					<div class="gouwucheCart">
+				<div class="top">
+					<p>
+						<span><i class="fa fa-android i1"></i>金士顿从以专卖店<i class="fa fa-angle-right i2"></i></span>
+						<span class="pull-right fahuo">卖家已发货</span>
+					</p>
+				</div>
+				<div class="center">
+					<div class="row">
+						<div class="col-25 center-img">
+							<img src="img/all.png"/>
+						</div>
+						<div class="col-60 center-right">
+							<p> 金士顿车载优盘，服务质量优越，评价高</p>
+							<p> 套餐二：黑色</p>
+							<p><span>七天退换</span></p>
+						</div>
+						<div class="col-15 center-fright">
+							<p>￥15.50</p>
+							<p>x1</p>
+						</div>
+					</div>
+					<div class="row bottom1">
+						  <p class="pull-right">共一件商品  <span>合计</span><span class="money">￥40.90</span></p>
+					</div>
+				</div>
+				<div>
+					<div class="row bottom2">
+						<div class="col-20 bottom2-left">
+						   <p>更多</p>
+						</div>
+						<div class="col-80 bottom2-right">
+						   <button>查看物流</button>
+						   <button>查看物流</button>
+						   <button>查看物流</button>
+						</div>
+					</div>
+				</div>
+			</div>
+					<div class="gouwucheCart">
+				<div class="top">
+					<p>
+						<span><i class="fa fa-android i1"></i>金士顿从以专卖店<i class="fa fa-angle-right i2"></i></span>
+						<span class="pull-right fahuo">卖家已发货</span>
+					</p>
+				</div>
+				<div class="center">
+					<div class="row">
+						<div class="col-25 center-img">
+							<img src="img/all.png"/>
+						</div>
+						<div class="col-60 center-right">
+							<p> 金士顿车载优盘，服务质量优越，评价高</p>
+							<p> 套餐二：黑色</p>
+							<p><span>七天退换</span></p>
+						</div>
+						<div class="col-15 center-fright">
+							<p>￥15.50</p>
+							<p>x1</p>
+						</div>
+					</div>
+					<div class="row bottom1">
+						  <p class="pull-right">共一件商品  <span>合计</span><span class="money">￥40.90</span></p>
+					</div>
+				</div>
+				<div>
+					<div class="row bottom2">
+						<div class="col-20 bottom2-left">
+						   <p>更多</p>
+						</div>
+						<div class="col-80 bottom2-right">
+						   <button>查看物流</button>
+						   <button>查看物流</button>
+						   <button>查看物流</button>
+						</div>
+					</div>
+				</div>
+			</div>
+					<div class="gouwucheCart">
+				<div class="top">
+					<p>
+						<span><i class="fa fa-android i1"></i>金士顿从以专卖店<i class="fa fa-angle-right i2"></i></span>
+						<span class="pull-right fahuo">卖家已发货</span>
+					</p>
+				</div>
+				<div class="center">
+					<div class="row">
+						<div class="col-25 center-img">
+							<img src="img/all.png"/>
+						</div>
+						<div class="col-60 center-right">
+							<p> 金士顿车载优盘，服务质量优越，评价高</p>
+							<p> 套餐二：黑色</p>
+							<p><span>七天退换</span></p>
+						</div>
+						<div class="col-15 center-fright">
+							<p>￥15.50</p>
+							<p>x1</p>
+						</div>
+					</div>
+					<div class="row bottom1">
+						  <p class="pull-right">共一件商品  <span>合计</span><span class="money">￥40.90</span></p>
+					</div>
+				</div>
+				<div>
+					<div class="row bottom2">
+						<div class="col-20 bottom2-left">
+						   <p>更多</p>
+						</div>
+						<div class="col-80 bottom2-right">
+						   <button>查看物流</button>
+						   <button>查看物流</button>
+						   <button>查看物流</button>
+						</div>
+					</div>
+				</div>
+			</div>
+					<div class="gouwucheCart">
+				<div class="top">
+					<p>
+						<span><i class="fa fa-android i1"></i>金士顿从以专卖店<i class="fa fa-angle-right i2"></i></span>
+						<span class="pull-right fahuo">卖家已发货</span>
+					</p>
+				</div>
+				<div class="center">
+					<div class="row">
+						<div class="col-25 center-img">
+							<img src="img/all.png"/>
+						</div>
+						<div class="col-60 center-right">
+							<p> 金士顿车载优盘，服务质量优越，评价高</p>
+							<p> 套餐二：黑色</p>
+							<p><span>七天退换</span></p>
+						</div>
+						<div class="col-15 center-fright">
+							<p>￥15.50</p>
+							<p>x1</p>
+						</div>
+					</div>
+					<div class="row bottom1">
+						  <p class="pull-right">共一件商品  <span>合计</span><span class="money">￥40.90</span></p>
+					</div>
+				</div>
+				<div>
+					<div class="row bottom2">
+						<div class="col-20 bottom2-left">
+						   <p>更多</p>
+						</div>
+						<div class="col-80 bottom2-right">
+						   <button>查看物流</button>
+						   <button>查看物流</button>
+						   <button>查看物流</button>
+						</div>
+					</div>
+				</div>
+			</div>
+					<div class="gouwucheCart">
+				<div class="top">
+					<p>
+						<span><i class="fa fa-android i1"></i>金士顿从以专卖店<i class="fa fa-angle-right i2"></i></span>
+						<span class="pull-right fahuo">卖家已发货</span>
+					</p>
+				</div>
+				<div class="center">
+					<div class="row">
+						<div class="col-25 center-img">
+							<img src="img/all.png"/>
+						</div>
+						<div class="col-60 center-right">
+							<p> 金士顿车载优盘，服务质量优越，评价高</p>
+							<p> 套餐二：黑色</p>
+							<p><span>七天退换</span></p>
+						</div>
+						<div class="col-15 center-fright">
+							<p>￥15.50</p>
+							<p>x1</p>
+						</div>
+					</div>
+					<div class="row bottom1">
+						  <p class="pull-right">共一件商品  <span>合计</span><span class="money">￥40.90</span></p>
+					</div>
+				</div>
+				<div>
+					<div class="row bottom2">
+						<div class="col-20 bottom2-left">
+						   <p>更多</p>
+						</div>
+						<div class="col-80 bottom2-right">
+						   <button>查看物流</button>
+						   <button>查看物流</button>
+						   <button>查看物流</button>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+       </div>
+      </div>
+    </div>
+    <script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+  </body>
+</html>
