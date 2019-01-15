@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>我的生活</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/animate.css/3.7.0/animate.css"/>
+    <style>
+    	.title-btn{
+    		margin: 0;
+    	}
+    	.bar-bg-color{
+    		background:#E34B46;
+    	}
+    	.goback{
+    		color: white;
+    	}
+    	.title-btn{
+    		display: inline-block;
+    		border: 1px solid #fff;
+    		font-size: 1rem;
+    		color: #FFFFFF;
+    		width: 45%;
+    		height: 1.5rem;
+    		margin: 0.4rem auto 0 auto;
+    		border-radius: 13px;
+    		position: relative;
+    		box-sizing: border-box;
+    	}
+    	.title-btn span{
+    		display: block;
+    		font-size: 0.8rem;
+    		float: left;
+    		line-height: 1.4rem;
+    		text-align: center;
+    	}
+    	.title-btn span:nth-child(1){
+    		width:calc(50% - 1px);
+    		border-bottom-left-radius: 10px;
+    	    border-top-left-radius: 10px;
+    	}
+    	.title-btn span:nth-child(2){
+    		width:calc(50% - -1px);
+    		border-bottom-right-radius: 10px;
+    	    border-top-right-radius: 10px;
+    	}
+    	.active{
+    		background: #FFFFFF;
+    		color:#E34B46;
+    	}
+    	.content1{
+    		height: calc(100% - 2.2rem);
+    		width: 100%;
+    		overflow-y: auto;
+    		margin-top: 2.3rem;
+    	}
+    	.wait-complete-list{
+    		width: 100%;
+    		list-style: none;
+    		margin: 0;
+    		padding: 0;
+    	}
+    	.wait-complete-list li{
+    		width: 100%;
+    		height:3.2rem;
+    		background: #fff;
+    		border-bottom: 1px solid #e7e3e3;
+    		/*border-radius:8px;
+    		margin: 1px auto;*/
+    	}
+    	.wait-complete-list li div{
+    		float: left;
+    	}
+    	.wait-complete-list-li-left{
+    		width: 20%;
+    		padding: 0.2rem 0 0 0.3rem;
+    	}
+    	.wait-complete-list-li-left img{
+    		display: block;
+    		width: 2.6rem;
+    		height: 2.6rem;
+    		border-radius: 50%;
+    	}
+    	.wait-complete-list-li-center{
+    		width: 50%;
+    	}
+    	.wait-complete-list-li-right{
+    		width: 30%;
+    	}
+    	.wait-complete-list-li-center p{
+    		margin: 0.2rem 0 0 0rem;
+    	}
+    	.wait-complete-list-li-center p:nth-child(1){
+    	  font-size:0.9rem ;
+    	  color:#575454;
+    	}
+    	.wait-complete-list-li-center p:nth-child(2){
+    	 font-size: 0.8rem;
+    	 color: #f75959;
+    	 margin: 0rem 0 0 0rem;
+    	 font-weight: bold;
+    	}
+    	.wait-complete-list-li-center p:nth-child(2) span{
+    	 font-size: 0.7rem;
+    	 color: #777;
+    	 margin: 0rem 0 0 0rem;
+    	 font-weight: 400;
+    	}
+    	.wait-complete-list-li-right p{
+    		font-size: 0.7rem;
+    		color: #999;
+    		margin: 0.2rem 0 0 1.2rem;
+    	}
+    </style>
+  </head>
+  <body>
+    <div class="page-group">
+        <div class="page page-current">
+         <header class="bar bar-nav bar-bg-color">
+		    <a class="button button-link button-nav pull-left" href="/demos/card" data-transition='slide-out'>
+		      <span class="icon icon-left goback"></span>
+		    </a>
+		    <h1 class="title"><p class="title-btn"><span class="active" data-choose = "1">待结算</span><span data-choose = "2">已结算</span></p></h1>
+		  </header>
+		  <div class="content1">
+		      <div class="wait-complete">
+		      	  <ul class="wait-complete-list animated bounceInUp">
+		      	  	<li>
+		      	  		<div class="wait-complete-list-li-left">
+		      	  			 <img src="http://assets.cw2009.com/u/20181116/thumb_1542369699.png"/>
+		      	  		</div>
+		      	  		<div class="wait-complete-list-li-center">
+		      	  			 <p>有限公司注册</p>
+		      	  			 <p>600元 <span>2018-10-17</span></p>
+		      	  		</div>
+		      	  	</li>
+		      	  	<li>
+		      	  		<div class="wait-complete-list-li-left">
+		      	  			 <img src="http://assets.cw2009.com/u/20181116/thumb_1542369699.png"/>
+		      	  		</div>
+		      	  		<div class="wait-complete-list-li-center">
+		      	  			 <p>有限公司注册</p>
+		      	  			 <p>600元 <span>2018-10-17</span></p>
+		      	  		</div>
+		      	  		<div class="wait-complete-list-li-right">
+		      	  			<p>2018-10-17</p>
+		      	  		</div>
+		      	  	</li>
+		      	  	<li>
+		      	  		<div class="wait-complete-list-li-left">
+		      	  			 <img src="http://assets.cw2009.com/u/20181116/thumb_1542369699.png"/>
+		      	  		</div>
+		      	  		<div class="wait-complete-list-li-center">
+		      	  			 <p>有限公司注册</p>
+		      	  			 <p>600元 <span>2018-10-17</span></p>
+		      	  		</div>
+		      	  	</li>
+		      	  	<li>
+		      	  		<div class="wait-complete-list-li-left">
+		      	  			 <img src="http://assets.cw2009.com/u/20181116/thumb_1542369699.png"/>
+		      	  		</div>
+		      	  		<div class="wait-complete-list-li-center">
+		      	  			 <p>有限公司注册</p>
+		      	  			 <p>600元 <span>2018-10-17</span></p>
+		      	  		</div>
+		      	  		<div class="wait-complete-list-li-right">
+		      	  			<p>2018-10-17</p>
+		      	  		</div>
+		      	  	</li>
+		      	  	<li>
+		      	  		<div class="wait-complete-list-li-left">
+		      	  			 <img src="http://assets.cw2009.com/u/20181116/thumb_1542369699.png"/>
+		      	  		</div>
+		      	  		<div class="wait-complete-list-li-center">
+		      	  			 <p>有限公司注册</p>
+		      	  			 <p>600元 <span>2018-10-17</span></p>
+		      	  		</div>
+		      	  	</li>
+		      	  	<li>
+		      	  		<div class="wait-complete-list-li-left">
+		      	  			 <img src="http://assets.cw2009.com/u/20181116/thumb_1542369699.png"/>
+		      	  		</div>
+		      	  		<div class="wait-complete-list-li-center">
+		      	  			 <p>有限公司注册</p>
+		      	  			 <p>600元 <span>2018-10-17</span></p>
+		      	  		</div>
+		      	  		<div class="wait-complete-list-li-right">
+		      	  			<p>2018-10-17</p>
+		      	  		</div>
+		      	  	</li>
+		      	  	<li>
+		      	  		<div class="wait-complete-list-li-left">
+		      	  			 <img src="http://assets.cw2009.com/u/20181116/thumb_1542369699.png"/>
+		      	  		</div>
+		      	  		<div class="wait-complete-list-li-center">
+		      	  			 <p>有限公司注册</p>
+		      	  			 <p>600元 <span>2018-10-17</span></p>
+		      	  		</div>
+		      	  	</li>
+		      	  	<li>
+		      	  		<div class="wait-complete-list-li-left">
+		      	  			 <img src="http://assets.cw2009.com/u/20181116/thumb_1542369699.png"/>
+		      	  		</div>
+		      	  		<div class="wait-complete-list-li-center">
+		      	  			 <p>有限公司注册</p>
+		      	  			 <p>600元 <span>2018-10-17</span></p>
+		      	  		</div>
+		      	  		<div class="wait-complete-list-li-right">
+		      	  			<p>2018-10-17</p>
+		      	  		</div>
+		      	  	</li>
+		      	  	<li>
+		      	  		<div class="wait-complete-list-li-left">
+		      	  			 <img src="http://assets.cw2009.com/u/20181116/thumb_1542369699.png"/>
+		      	  		</div>
+		      	  		<div class="wait-complete-list-li-center">
+		      	  			 <p>有限公司注册</p>
+		      	  			 <p>600元 <span>2018-10-17</span></p>
+		      	  		</div>
+		      	  	</li>
+		      	  	<li>
+		      	  		<div class="wait-complete-list-li-left">
+		      	  			 <img src="http://assets.cw2009.com/u/20181116/thumb_1542369699.png"/>
+		      	  		</div>
+		      	  		<div class="wait-complete-list-li-center">
+		      	  			 <p>有限公司注册</p>
+		      	  			 <p>600元 <span>2018-10-17</span></p>
+		      	  		</div>
+		      	  		<div class="wait-complete-list-li-right">
+		      	  			<p>2018-10-17</p>
+		      	  		</div>
+		      	  	</li>
+		      	  	<li>
+		      	  		<div class="wait-complete-list-li-left">
+		      	  			 <img src="http://assets.cw2009.com/u/20181116/thumb_1542369699.png"/>
+		      	  		</div>
+		      	  		<div class="wait-complete-list-li-center">
+		      	  			 <p>有限公司注册</p>
+		      	  			 <p>600元 <span>2018-10-17</span></p>
+		      	  		</div>
+		      	  	</li>
+		      	  	<li>
+		      	  		<div class="wait-complete-list-li-left">
+		      	  			 <img src="http://assets.cw2009.com/u/20181116/thumb_1542369699.png"/>
+		      	  		</div>
+		      	  		<div class="wait-complete-list-li-center">
+		      	  			 <p>有限公司注册</p>
+		      	  			 <p>600元 <span>2018-10-17</span></p>
+		      	  		</div>
+		      	  		<div class="wait-complete-list-li-right">
+		      	  			<p>2018-10-17</p>
+		      	  		</div>
+		      	  	</li>
+		      	  	<li>
+		      	  		<div class="wait-complete-list-li-left">
+		      	  			 <img src="http://assets.cw2009.com/u/20181116/thumb_1542369699.png"/>
+		      	  		</div>
+		      	  		<div class="wait-complete-list-li-center">
+		      	  			 <p>有限公司注册</p>
+		      	  			 <p>600元 <span>2018-10-17</span></p>
+		      	  		</div>
+		      	  	</li>
+		      	  	<li>
+		      	  		<div class="wait-complete-list-li-left">
+		      	  			 <img src="http://assets.cw2009.com/u/20181116/thumb_1542369699.png"/>
+		      	  		</div>
+		      	  		<div class="wait-complete-list-li-center">
+		      	  			 <p>有限公司注册</p>
+		      	  			 <p>600元 <span>2018-10-17</span></p>
+		      	  		</div>
+		      	  		<div class="wait-complete-list-li-right">
+		      	  			<p>2018-10-17</p>
+		      	  		</div>
+		      	  	</li>
+		      	  	<li>
+		      	  		<div class="wait-complete-list-li-left">
+		      	  			 <img src="http://assets.cw2009.com/u/20181116/thumb_1542369699.png"/>
+		      	  		</div>
+		      	  		<div class="wait-complete-list-li-center">
+		      	  			 <p>有限公司注册</p>
+		      	  			 <p>600元 <span>2018-10-17</span></p>
+		      	  		</div>
+		      	  	</li>
+		      	  	<li>
+		      	  		<div class="wait-complete-list-li-left">
+		      	  			 <img src="http://assets.cw2009.com/u/20181116/thumb_1542369699.png"/>
+		      	  		</div>
+		      	  		<div class="wait-complete-list-li-center">
+		      	  			 <p>有限公司注册</p>
+		      	  			 <p>600元 <span>2018-10-17</span></p>
+		      	  		</div>
+		      	  		<div class="wait-complete-list-li-right">
+		      	  			<p>2018-10-17</p>
+		      	  		</div>
+		      	  	</li>
+		      	  </ul>
+		      </div>
+		      <div class="iscompleted" style="display: none;">
+		      	 <ul class="wait-complete-list animated bounceInUp">
+		      	  	<li>
+		      	  		<div class="wait-complete-list-li-left">
+		      	  			 <img src="http://assets.cw2009.com/u/20181116/thumb_1542369699.png"/>
+		      	  		</div>
+		      	  		<div class="wait-complete-list-li-center">
+		      	  			 <p>有限公司注册</p>
+		      	  			 <p>600元 <span>2018-10-17</span></p>
+		      	  		</div>
+		      	  	</li>
+		      	  	<li>
+		      	  		<div class="wait-complete-list-li-left">
+		      	  			 <img src="http://assets.cw2009.com/u/20181116/thumb_1542369699.png"/>
+		      	  		</div>
+		      	  		<div class="wait-complete-list-li-center">
+		      	  			 <p>有限公司注册</p>
+		      	  			 <p>600元 <span>2018-10-17</span></p>
+		      	  		</div>
+		      	  		<div class="wait-complete-list-li-right">
+		      	  			<p>2018-10-17</p>
+		      	  		</div>
+		      	  	</li>
+		      	  	<li>
+		      	  		<div class="wait-complete-list-li-left">
+		      	  			 <img src="http://assets.cw2009.com/u/20181116/thumb_1542369699.png"/>
+		      	  		</div>
+		      	  		<div class="wait-complete-list-li-center">
+		      	  			 <p>有限公司注册</p>
+		      	  			 <p>600元 <span>2018-10-17</span></p>
+		      	  		</div>
+		      	  	</li>
+		      	  	<li>
+		      	  		<div class="wait-complete-list-li-left">
+		      	  			 <img src="http://assets.cw2009.com/u/20181116/thumb_1542369699.png"/>
+		      	  		</div>
+		      	  		<div class="wait-complete-list-li-center">
+		      	  			 <p>有限公司注册</p>
+		      	  			 <p>600元 <span>2018-10-17</span></p>
+		      	  		</div>
+		      	  		<div class="wait-complete-list-li-right">
+		      	  			<p>2018-10-17</p>
+		      	  		</div>
+		      	  	</li>
+		      	  </ul>
+		      </div>
+        </div>
+      </div>
+    </div>
+    <script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+     <script>
+    	$(function(){
+    		$("body").on("click",".title-btn span",function(){
+    			if($(this).attr("data-choose")==1){
+    				$(".title-btn span").removeClass("active");
+    				$(this).addClass("active");
+    				$(".wait-complete").show();
+    				$(".iscompleted").hide();
+    			}
+    			if($(this).attr("data-choose")==2){
+    				$(".title-btn span").removeClass("active");
+    				$(this).addClass("active");
+    				$(".wait-complete").hide();
+    				$(".iscompleted").show()
+    			}
+    		})
+    	})
+    </script>
+  </body>
+</html>
